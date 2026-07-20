@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Viveka-QA-Analyst/',
+  base: process.env.VERCEL ? '/' : '/Viveka-QA-Analyst/',
   plugins: [react()],
 })
